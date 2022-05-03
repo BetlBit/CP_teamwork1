@@ -11,6 +11,7 @@ export const Navbar = () => {
       document.getElementsByClassName("Hi")[0].setAttribute("data-theme", localStorage.getItem("theme"));
       document.getElementsByClassName("header")[0].setAttribute("data-theme", localStorage.getItem("theme"));
       document.getElementsByClassName("select-plan")[0].setAttribute("data-theme", localStorage.getItem("theme"));
+      document.getElementsByClassName("lnks")[0].setAttribute("data-theme", localStorage.getItem("theme"));
         
       
     }, [che]);
