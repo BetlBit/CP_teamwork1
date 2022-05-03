@@ -18,18 +18,18 @@ export const Footer = () => {
 				<div>
 					<p className='headingC'><b>Links</b></p>
 					<ul>
-						<li><a href="/home">Home</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="">Contact us</a></li>
+						<li class><a href="/home" className="footer-links">Home</a></li>
+						<li><a href="/about" className="footer-links">About</a></li>
+						<li><a href="/contact-us" className="footer-links">Contact us</a></li>
 					</ul>
 				</div>
 
 				<div>
 					<p className='headingC'><b>Info</b></p>
 					<ul>
-						<li><a href="">Partners</a></li>
-						<li><a href="">Licenses</a></li>
-						<li><a href="">Legal information</a></li>
+						<li><a href="/partners" className="footer-links">Partners</a></li>
+						<li><a href="/licenses" className="footer-links">Licenses</a></li>
+						<li><a href="/legal-information" className="footer-links">Legal information</a></li>
 					</ul>
 				</div>
 
