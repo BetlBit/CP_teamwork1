@@ -12,7 +12,7 @@ export const Footer = () => {
 			<footer className='footer'>
 				<div>
 					<h1 className="header-title"><span className="span-UP">Axie</span></h1>
-					<p id='address'>г. Лаишево, г. Лаишево, ул. Советская, дом 4 <br />8 (960) 074-94-74<br />support@gmail.com</p>
+					<p id='address'>Laishevo, Laishevo, Sovetskaya str., house 4 <br />8 (960) 074-94-74<br />support@gmail.com</p>
 				</div>
 
 				<div>
