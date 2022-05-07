@@ -6,10 +6,11 @@ body {
     background-color: rgb(207, 238, 243);
     font-family: 'IBM Plex Sans', sans-serif;
 }
-body[data-theme="dark"] {
-    color: #fff;
-    background-color: rgb(80, 92, 94);
-  }
+
+::-webkit-scrollbar {
+	display: none;
+}
+
 .header {
     background-color: rgb(235, 217, 253);
     height: 100%;
@@ -17,9 +18,6 @@ body[data-theme="dark"] {
     align-items: center;
     justify-content: space-between;
     
-}
-.header[data-theme="dark"] {
-    background-color: rgb(71, 60, 83);
 }
 
 .logo {
@@ -37,6 +35,7 @@ body[data-theme="dark"] {
 .links {
     margin-left: 30%;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .sign-in {
@@ -70,10 +69,6 @@ body[data-theme="dark"] {
     align-items: center;
 }
 
-.Hi[data-theme="dark"] {
-    background-color: rgb(71, 60, 83);
-}
-
 .welcome {
     font-size: 15px;
     font-weight: 500;
@@ -90,7 +85,7 @@ body[data-theme="dark"] {
 }
 
 .dot {
-    color: rgb(0, 183, 255);;
+    color: rgb(0, 183, 255);
 }
 
 .try-demo {
@@ -121,23 +116,12 @@ body[data-theme="dark"] {
     background-color: rgb(235, 217, 253);
 }
 
-.select-plan[data-theme="dark"] {
-    background-color: rgb(71, 60, 83);
-}
-.lnks[data-theme="dark"] {
-    color: white;
-}
-.lnks:hover[data-theme="dark"] {
-    color: white;
-}
-.lnks:visited[data-theme="dark"] {
-    color: white;
-}
 .Buy-text {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3% 0 7% 0;
+		background-color: rgb(0, 183, 255);
 }
 
 .select-box {
@@ -149,7 +133,7 @@ body[data-theme="dark"] {
     width: 350px;
     height: 500px;
     border-radius: 20px;
-    background-color: rgb(0, 183, 255);
+    background-color: rgb(207, 238, 243);
     margin: 0 5% 0 5%;
     display: flex;
     align-items: center;
@@ -173,13 +157,14 @@ body[data-theme="dark"] {
 .buy-plan {
     width: 200px;
     height: 40px;
-    background-color: rgb(207, 238, 243);
+    background-color: rgb(0, 183, 255);
     display: block;
     -webkit-appearance: none;
     border: none;
     border-radius: 7px;
     cursor: pointer;
     margin-top: 5%;
+    font-weight: 400;
 }
 
 .yes-no {
@@ -203,6 +188,7 @@ ul {
 	width: 35px;
 	padding: 1rem;
 	margin-right: 10px;
+    cursor: pointer;
 }
 
 p#c4{
@@ -229,4 +215,27 @@ footer {
 
 .headingC {
 	font-size: 20px;
+}
+body[data-theme="dark"] {
+	color: #fff;
+	background-color: rgb(80, 92, 94);
+}
+.header[data-theme="dark"] {
+	background-color: rgb(71, 60, 83);
+}
+.Hi[data-theme="dark"] {
+	background-color: rgb(71, 60, 83);
+}
+
+.select-plan[data-theme="dark"] {
+	background-color: rgb(71, 60, 83);
+}
+.lnks[data-theme="dark"] {
+	color: white;
+}
+.lnks:hover[data-theme="dark"] {
+	color: white;
+}
+.lnks:visited[data-theme="dark"] {
+	color: white;
 }
