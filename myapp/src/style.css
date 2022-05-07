@@ -121,7 +121,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 3% 0 7% 0;
-		background-color: rgb(0, 183, 255);
+		background-color: rgb(235, 217, 253);
 }
 
 .select-box {
@@ -216,13 +216,16 @@ footer {
 .headingC {
 	font-size: 20px;
 }
+
 body[data-theme="dark"] {
 	color: #fff;
 	background-color: rgb(80, 92, 94);
 }
+
 .header[data-theme="dark"] {
 	background-color: rgb(71, 60, 83);
 }
+
 .Hi[data-theme="dark"] {
 	background-color: rgb(71, 60, 83);
 }
@@ -230,12 +233,15 @@ body[data-theme="dark"] {
 .select-plan[data-theme="dark"] {
 	background-color: rgb(71, 60, 83);
 }
+
 .lnks[data-theme="dark"] {
 	color: white;
 }
+
 .lnks:hover[data-theme="dark"] {
 	color: white;
 }
+
 .lnks:visited[data-theme="dark"] {
 	color: white;
 }
