@@ -232,6 +232,11 @@ body[data-theme="dark"] {
 	background-color: rgb(71, 60, 83);
 }
 
+.block-buy[data-theme="dark"] {
+    background-color: rgb(80 92 94);
+}
+
+
 /* .lnks[data-theme="dark"] {
 	color: white;
 }
@@ -267,4 +272,15 @@ a {
 	font-weight: 400;
 	text-decoration: none;
 	
+}
+
+.lnks:visited[data-theme="dark"] {
+	color: aliceblue; 
+ }
+ .lnks:active[data-theme="dark"] {
+	color: aliceblue; 
+ }
+
+ .lnks[data-theme="dark"] {
+	color: aliceblue;
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
-import correct from './images/correct.png'
-import remove from './images/remove.png'
+
 
 
 export const Product = () => {

@@ -12,6 +12,7 @@ export const Navbar = () => {
       document.getElementsByClassName("header")[0].setAttribute("data-theme", localStorage.getItem("theme"));
       document.getElementsByClassName("select-plan")[0].setAttribute("data-theme", localStorage.getItem("theme"));
       document.getElementsByClassName("lnks")[0].setAttribute("data-theme", localStorage.getItem("theme"));
+      document.getElementsByClassName("block-buy")[0].setAttribute("data-theme", localStorage.getItem("theme"));
         
       
     }, [che]);
