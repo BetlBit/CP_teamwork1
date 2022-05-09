@@ -3,12 +3,15 @@ import ico1 from "./images/facebook.png";
 import ico2 from "./images/twitter.png";
 import ico3 from "./images/telegram.png";
 import ico4 from "./images/youtube.png";
-import "./style.css";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 
 export const Footer = () => {
+	const theme = useContext(ThemeContext)
+	
 	return (
-		<div className="footer">
+		<div className="footer1" style={{background: theme.background, color: theme.color, outline: theme.outline}}>
 			<footer className='footer'>
 				<div>
 					<h1 className="header-title"><span className="span-UP">Axie</span></h1>

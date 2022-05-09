@@ -6,7 +6,9 @@ body {
     background-color: rgb(207, 238, 243);
     font-family: 'IBM Plex Sans', sans-serif;
 }
-
+.Collabs{
+    
+}
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -199,6 +201,9 @@ footer {
 	justify-content: space-evenly;
 	margin-bottom: 20px;
 }
+.footer1{
+    background-color: antiquewhite;
+}
 
 #address {
 	line-height: 26px;
@@ -233,7 +238,7 @@ body[data-theme="dark"] {
 }
 
 .block-buy[data-theme="dark"] {
-    background-color: rgb(80 92 94);
+    background-color: rgb(80, 92, 94);
 }
 
 

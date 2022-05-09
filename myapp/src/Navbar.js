@@ -1,37 +1,13 @@
 import React from 'react';
-import "./style.css";
 import shield from './images/shield.png'
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 
 export const Navbar = () => {
-    const [che, setChecked] = useState(localStorage.getItem("theme") === "dark" ? true : false);
-    useEffect(() => {
-      document.getElementsByTagName("Body")[0].setAttribute("data-theme", localStorage.getItem("theme"))
-      document.getElementsByClassName("Hi")[0].setAttribute("data-theme", localStorage.getItem("theme"));
-      document.getElementsByClassName("header")[0].setAttribute("data-theme", localStorage.getItem("theme"));
-      document.getElementsByClassName("select-plan")[0].setAttribute("data-theme", localStorage.getItem("theme"));
-      document.getElementsByClassName("lnks")[0].setAttribute("data-theme", localStorage.getItem("theme"));
-      document.getElementsByClassName("block-buy")[0].setAttribute("data-theme", localStorage.getItem("theme"));
-        
-      
-    }, [che]);
-  
-    
-
-    function ThemeChange() {
-      if (che === false) {
-        localStorage.setItem("theme", "dark");
-        
-        setChecked(true);
-      } else {
-        localStorage.setItem("theme", "light");
-  
-        setChecked(false);
-      }
-    }
+	const theme = useContext(ThemeContext)
     return (
-        <header className="header">
+        <header className="header" style={{background: theme.background, color: theme.color, outline: theme.outline}}>
         <nav className="nav">
             <img src={shield} className="logo"></img>
             <h1 className="header-title">Axie</h1>
@@ -40,13 +16,7 @@ export const Navbar = () => {
             <a href="/about" className="links">About</a>
 
         </nav>
-        <label>Change Theme
-          <input
-            type="checkbox"
-            defaultChecked={che}
-            onChange={() => ThemeChange()}
-          />
-        </label>
+
         <button className="sign-in">Log In</button>
       </header>
     )
