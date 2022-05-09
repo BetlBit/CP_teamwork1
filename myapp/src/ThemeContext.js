@@ -6,7 +6,7 @@ export const themes = {
         color: '#000000'    },
     dark:  {
         background: 'rgb(71, 60, 83)',
-<<<<<<< Updated upstream
+
         color: '#F0F8FF'}
         ,
     dark2:  {
@@ -27,21 +27,6 @@ export const themes = {
 };
 
 
-export const ThemeContext = React.createContext(themes.light)
-=======
-        color: '#F0F8FF'
-    }
-};
-export const themes2 = {
-    light: {
-        background: 'rgb(235, 217, 253)',
-        color: '#000000'    },
-    dark:  {
-        background: 'rgb(71, 60, 83)',
-        color: '#F0F8FF'
-    }
-};
 
 export const ThemeContext = React.createContext(themes.light)
-export const ThemeContext1 = React.createContext(themes2.light)
->>>>>>> Stashed changes
+
