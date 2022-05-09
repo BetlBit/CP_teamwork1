@@ -16,8 +16,6 @@ function App() {
     setTheme((prevTheme)=> prevTheme === themes.light? themes.dark: themes.light)
     setTheme2((prevTheme)=> prevTheme === themes.light2? themes.dark2: themes.light2)
     setTheme3((prevTheme)=> prevTheme === themes.light3? themes.dark3: themes.light3)
-  const handler = () => {
-    setTheme((prevTheme)=> prevTheme === themes.light? themes.dark: themes.light)
   }
     return (
     <div>
@@ -35,10 +33,11 @@ function App() {
       <Footer />
       </ThemeContext.Provider>
       </ThemeContext.Provider>
-
     </div>
   );
 }
 
 export default App;
+
+
 
