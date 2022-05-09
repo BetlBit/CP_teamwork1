@@ -10,17 +10,14 @@ import { themes, ThemeContext } from "./ThemeContext";
 
 function App() {
   const [theme, setTheme] = useState(themes.light)
-<<<<<<< Updated upstream
   const [theme2, setTheme2] = useState(themes.light2)
   const [theme3, setTheme3] = useState(themes.light3)
   const handler = () => {
     setTheme((prevTheme)=> prevTheme === themes.light? themes.dark: themes.light)
     setTheme2((prevTheme)=> prevTheme === themes.light2? themes.dark2: themes.light2)
     setTheme3((prevTheme)=> prevTheme === themes.light3? themes.dark3: themes.light3)
-=======
   const handler = () => {
     setTheme((prevTheme)=> prevTheme === themes.light? themes.dark: themes.light)
->>>>>>> Stashed changes
   }
     return (
     <div>
@@ -37,10 +34,8 @@ function App() {
       <ThemeContext.Provider value = {theme2}>
       <Footer />
       </ThemeContext.Provider>
-<<<<<<< Updated upstream
       </ThemeContext.Provider>
-=======
->>>>>>> Stashed changes
+
     </div>
   );
 }
