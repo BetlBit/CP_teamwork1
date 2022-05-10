@@ -4,9 +4,11 @@ import { HiPage } from './HiPage';
 import { Navbar } from './Navbar';
 import { Product } from './Product';
 import { Footer } from './Footer';
+import { About } from './About';
+import { NotFoundPage } from './NotFoundPage';
 import {useState} from 'react'
 import { themes, ThemeContext } from "./ThemeContext";
-
+import { Route, Routes} from "react-router-dom"
 
 function App() {
   const [theme, setTheme] = useState(themes.light)
@@ -25,11 +27,16 @@ function App() {
 				<button className='buttontheme' onClick={()=> handler()}>Смени!</button>
 			</div>
       <HiPage />
+      <Routes>
+        <Route path="/collaborations" element={<Collaborations />} />
+        {/* <Route path="/" element={<HiPage />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
       <ThemeContext.Provider value = {theme2}>
-      <Collaborations />
       </ThemeContext.Provider>
       <ThemeContext.Provider value = {theme3}>
-      <Product />
       </ThemeContext.Provider>
       <ThemeContext.Provider value = {theme2}>
       <Footer />

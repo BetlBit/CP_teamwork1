@@ -2,6 +2,8 @@ import React from 'react';
 import shield from './images/shield.png'
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
+import { Link } from "react-router-dom"
+
 
 
 export const Navbar = () => {
@@ -11,12 +13,10 @@ export const Navbar = () => {
         <nav className="nav">
             <img src={shield} className="logo"></img>
             <h1 className="header-title">Axie</h1>
-            <a href="/home" className="links">Home</a>
-            <a href="/product" className="links">Product</a>
-            <a href="/about" className="links">About</a>
-
+            <Link to="/collaborations" className="links">Collaborations</Link>
+            <Link to="/product" className="links">Product</Link>
+            <Link to="/about" className="links">About</Link>
         </nav>
-
         <button className="sign-in">Log In</button>
       </header>
     )
