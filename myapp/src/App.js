@@ -19,9 +19,11 @@ function App() {
   }
     return (
     <div>
-      <button onClick={()=> handler()}>Клац</button>
       <ThemeContext.Provider value = {theme}>
       <Navbar />
+			<div className='themechange'>
+				<button className='buttontheme' onClick={()=> handler()}>Смени!</button>
+			</div>
       <HiPage />
       <ThemeContext.Provider value = {theme2}>
       <Collaborations />
