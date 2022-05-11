@@ -26,10 +26,11 @@ function App() {
 			<div className='themechange'>
 				<button className='buttontheme' onClick={()=> handler()}>Смени!</button>
 			</div>
-      <HiPage />
+      {/* <HiPage />
+			Ты не то закоммитил, Паш */}
       <Routes>
         <Route path="/collaborations" element={<Collaborations />} />
-        {/* <Route path="/" element={<HiPage />} /> */}
+        <Route path="/" element={<HiPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />
         <Route path="*" element={<NotFoundPage />} />
