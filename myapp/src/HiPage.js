@@ -1,10 +1,14 @@
 import React from "react";
 import "./style.css";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 
 export const HiPage = () => {
+    const theme = useContext(ThemeContext)
+
     return (
-        <div className="Hi">
+        <div className="Hi" style={{background: theme.background, color: theme.color, outline: theme.outline}}>
             <div className="contanier">
                 <h2 className="welcome">WELCOME TO AXIE PRODUCT</h2>
                 <h1 className="brand-name">AxiE<br/>Security<span className="dot">.</span></h1>

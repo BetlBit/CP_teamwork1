@@ -6,13 +6,10 @@ body {
     background-color: rgb(207, 238, 243);
     font-family: 'IBM Plex Sans', sans-serif;
 }
-.Collabs{
-    
-}
-::-webkit-scrollbar {
-	display: none;
-}
-
+body[data-theme="dark"] {
+    color: #fff;
+    background-color: rgb(80, 92, 94);
+  }
 .header {
     background-color: rgb(235, 217, 253);
     height: 100%;
@@ -20,6 +17,9 @@ body {
     align-items: center;
     justify-content: space-between;
     
+}
+.header[data-theme="dark"] {
+    background-color: rgb(71, 60, 83);
 }
 
 .logo {
@@ -37,7 +37,6 @@ body {
 .links {
     margin-left: 30%;
     text-decoration: none;
-    font-weight: 500;
 }
 
 .sign-in {
@@ -53,6 +52,8 @@ body {
     margin-right: 5%;
 }
 
+
+
 .contanier {
     display: flex;
     flex-direction: column;
@@ -67,6 +68,10 @@ body {
     background-color: rgb(235, 217, 253);
     display: flex;
     align-items: center;
+}
+
+.Hi[data-theme="dark"] {
+    background-color: rgb(71, 60, 83);
 }
 
 .welcome {
@@ -85,7 +90,7 @@ body {
 }
 
 .dot {
-    color: rgb(0, 183, 255);
+    color: rgb(0, 183, 255);;
 }
 
 .try-demo {
@@ -116,12 +121,15 @@ body {
     background-color: rgb(235, 217, 253);
 }
 
+.select-plan[data-theme="dark"] {
+    background-color: rgb(71, 60, 83);
+}
+
 .Buy-text {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3% 0 7% 0;
-		/* background-color: rgb(235, 217, 253); */
 }
 
 .select-box {
@@ -133,7 +141,7 @@ body {
     width: 350px;
     height: 500px;
     border-radius: 20px;
-    background-color: rgb(207, 238, 243);
+    background-color: rgb(0, 183, 255);
     margin: 0 5% 0 5%;
     display: flex;
     align-items: center;
@@ -157,14 +165,13 @@ body {
 .buy-plan {
     width: 200px;
     height: 40px;
-    background-color: rgb(0, 183, 255);
+    background-color: rgb(207, 238, 243);
     display: block;
     -webkit-appearance: none;
     border: none;
     border-radius: 7px;
     cursor: pointer;
     margin-top: 5%;
-    font-weight: 400;
 }
 
 .yes-no {
@@ -175,122 +182,4 @@ body {
     margin: 0;
 }
 
-li {
-	list-style-type: none;
-}
 
-ul {
-	margin-left: 0; /* IE и Opera */
-	padding-left: 0; /* Firefox, Safari, Chrome */
- }
-
- .followUS {
-	width: 35px;
-	padding: 1rem;
-	margin-right: 10px;
-    cursor: pointer;
-}
-
-p#c4{
-	height: 10px;
-}
-
-footer {
-	margin-top: 40px;
-	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 20px;
-}
-.footer1{
-    background-color: antiquewhite;
-}
-
-#address {
-	line-height: 26px;
-}
-
-#c4{
-	width: 300px;
-	height: 100px;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.headingC {
-	font-size: 20px;
-}
-
-body[data-theme="dark"] {
-	color: #fff;
-	background-color: rgb(80, 92, 94);
-}
-
-.header[data-theme="dark"] {
-	background-color: rgb(71, 60, 83);
-}
-
-.Hi[data-theme="dark"] {
-	background-color: rgb(71, 60, 83);
-}
-
-.select-plan[data-theme="dark"] {
-	background-color: rgb(71, 60, 83);
-}
-
-.block-buy[data-theme="dark"] {
-    background-color: rgb(80, 92, 94);
-}
-
-
-/* .lnks[data-theme="dark"] {
-	color: white;
-}
-
-.lnks:hover[data-theme="dark"] {
-	color: white;
-}
-
-.lnks:visited[data-theme="dark"] {
-	color: white;
-}
-
-Не забыть data-theme="dark" */
-
-.desc-ON {
-	font-weight: 500;
-}
-
-.desc-OFF {
-	color: rgb(168, 167, 167);
-	font-weight: 400;
-}
-
-A:visited {
-	color: #000000; 
- }
- A:active {
-	color: #000000; 
- }
-
-a {
-	color:#000000;
-	font-weight: 400;
-	text-decoration: none;
-	
-}
-
-.lnks:visited[data-theme="dark"] {
-	color: aliceblue; 
- }
- .lnks:active[data-theme="dark"] {
-	color: aliceblue; 
- }
-
- .lnks[data-theme="dark"] {
-	color: aliceblue;
-}
-
-.ff{
-    background-color: rgb(0, 183, 255);
-    margin: 10px;
-}
