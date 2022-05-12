@@ -1,15 +1,18 @@
 import React from "react";
-import "./style.css";
-import correct from './images/correct.png'
-import remove from './images/remove.png'
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
+
 
 
 export const Product = () => {
+    const theme = useContext(ThemeContext)
+
     return (
-        <div className="select-plan">
+        <div className="select-plan"  style={{background: theme.background, color: theme.color, outline: theme.outline}}>
             <h1 className="Buy-text">Buy Your Plan</h1>
-            <div className="select-box">
-                <div className="block-buy">
+            <div className="select-box" style={{color: theme.bl}}>
+
+                <div className="block-buy" >
                     <h2 className="option">Basic Plan</h2>
                     <p className="Price">$15<span>/per month</span></p>
                     <div className="describe">
