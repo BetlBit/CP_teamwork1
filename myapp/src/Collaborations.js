@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from './Footer';
 import google from './images/search.png'
 import microsoft from './images/microsoft.png'
 import flaticon from './images/flaticon.png'
@@ -17,6 +18,7 @@ export const Collaborations = () => {
                 <img src={adidas} className="img-colab"></img>
                 <img src={nike} className="img-colab"></img>
            </div>
+					 <Footer/>
         </div>
     )
 }
