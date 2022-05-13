@@ -1,6 +1,6 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { Collaborations } from './Collaborations';
+import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
+// import { Collaborations } from './Collaborations';
 import { HiPage } from './HiPage';
 import { NotFound } from './pages/NotFound';
 import { Product } from './pages/Product';
