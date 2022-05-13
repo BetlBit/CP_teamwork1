@@ -199,7 +199,7 @@ footer {
 	margin-top: 40px;
 	display: flex;
 	justify-content: space-evenly;
-	margin-bottom: 20px;
+	margin-bottom: -20px;
 }
 .footer1{
     background-color: antiquewhite;
