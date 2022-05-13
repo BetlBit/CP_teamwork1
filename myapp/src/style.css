@@ -259,6 +259,49 @@ body[data-theme="dark"] {
 
 Не забыть data-theme="dark" */
 
+.select-box {
+	display: flex;
+	justify-content: center;
+}
+
+.block-buy {
+	width: 350px;
+	height: 500px;
+	border-radius: 20px;
+	background-color: rgb(207, 238, 243);
+	margin: 0 5% 0 5%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.option {
+	display: flex;
+	align-items: center;
+}
+
+.Price {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.describe {
+	margin-top: 5%;
+}
+
+.buy-plan {
+	width: 200px;
+	height: 40px;
+	background-color: rgb(0, 183, 255);
+	display: block;
+	-webkit-appearance: none;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	margin-top: 5%;
+	font-weight: 400;
+}
+
 .desc-ON {
 	font-weight: 500;
 }
