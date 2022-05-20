@@ -8,10 +8,14 @@ const DECR = 'DECR'
 export const countReducer = (state = defState, action) => {
 	switch (action.type){
 		case INCR:
-			return { count: state.count + 1}
+			if(state.count < 4){
+				return {...state, count: state.count + 1}
+			}
 
 		case DECR:
-			return { count: state.count - 1}
+			if(state.count > 0){
+				return {...state, count: state.count - 1}
+			}
 	}
 	return state
 }
